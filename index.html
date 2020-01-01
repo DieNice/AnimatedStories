@@ -9,10 +9,25 @@
     <script src="scripts/firstslide.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
     <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="d-inline-block align-top mylogo"></a>
-    <a class="navbar-brand" href="#">О нас| Обратная связь</a>
-    <a class="navbar-brand" href="#">Регистрация|Авторизация</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Домашняя страница <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">О нас| Обратная связь</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Регистрация|Авторизация</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <div class="container w-75 align-content-center">
@@ -24,7 +39,7 @@
                     <input type="email" class="form-control" id="inputname" aria-describedby="emailHelp"
                            placeholder="Введите имя">
                 </form>
-                    <h5 id="playcaption">Вы готовы?</h5>
+                <h5 id="playcaption">Вы готовы?</h5>
                 <button type="button" class="btn btn-success align-content-center" id="btn1">
                     <a class="" href="#myslider" role="button" data-slide="next">Да</a></button>
                 <button type="button" class="btn btn-danger align-content-center" id="btn2" onclick="buttonno()">
