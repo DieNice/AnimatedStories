@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     padding: 0;
@@ -36,11 +35,47 @@ a:hover {
     transition: all .6s ease;
 }
 
-.headermenu{
-    width: 100%;
-    float: left;
-    color: silver;
-    background: url("../images/headerbackground.jpeg");
+.img-wrap {
+    position: relative;
 }
 
+.img-wrap #btn1 {
+    position: absolute;
+    align-content: center;
+    left: 40%;
+    bottom: 50%;
+    width: 5%;
+}
 
+.img-wrap #btn2 {
+    position: absolute;
+    align-content: center;
+    left: 50%;
+    bottom: 50%;
+    width: 10%;
+}
+
+.img-wrap #inputname {
+    position: absolute;
+    align-content: center;
+    left: 40%;
+    bottom: 70%;
+    width: 20%;
+}
+
+/*Slider up*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrap #playcaption {
+    position: absolute;
+    align-content: center;
+    left: 45%;
+    bottom: 60%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+}
