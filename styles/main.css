@@ -79,3 +79,8 @@ a:hover {
     font-family: 'Lobster', cursive;
     font-size: x-large;
 }
+
+.borderimg {
+    border-image-source: url("../images/borderforslides.jpg");
+    border-image-repeat: repeat;
+}
