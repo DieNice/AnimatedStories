@@ -1,4 +1,5 @@
 let i = 0;
+
 function buttonno() {
     i++;
     i = i % 4;
@@ -19,5 +20,5 @@ function buttonno() {
 }
 
 function getName() {
-    
+    return document.getElementById("inputname").value.toString();
 }

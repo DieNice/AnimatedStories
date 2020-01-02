@@ -11,12 +11,13 @@ html {
 }
 
 body {
+    background-color: #5a6268 !important;
     width: 100%;
     height: 100%;
-    background-color: white;
     color: black;
     font-family: "Segoe U", Arial, sans-serif;
     font-size: 1em;
+
 }
 
 a {
@@ -39,7 +40,7 @@ a:hover {
     position: relative;
 }
 
-.img-wrap #btn1 {
+.img-wrap-btn1 {
     position: absolute;
     align-content: center;
     left: 40%;
@@ -47,7 +48,7 @@ a:hover {
     width: 5%;
 }
 
-.img-wrap #btn2 {
+.img-wrap-btn2 {
     position: absolute;
     align-content: center;
     left: 50%;
@@ -83,4 +84,8 @@ a:hover {
 .borderimg {
     border-image-source: url("../images/borderforslides.jpg");
     border-image-repeat: repeat;
+}
+
+.imageslides {
+    height: 50%;
 }
