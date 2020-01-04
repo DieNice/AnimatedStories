@@ -1,0 +1,68 @@
+button a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.img-wrap #playcaption {
+    position: absolute;
+    align-content: center;
+    left: 45%;
+    bottom: 60%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+}
+
+.img-wrap #inputname {
+    position: absolute;
+    align-content: center;
+    left: 40%;
+    bottom: 70%;
+    width: 20%;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.hasslider {
+    position: absolute;
+    align-content: center;
+}
+
+.img-wrap-btn1 {
+    left: 40%;
+    bottom: 50%;
+}
+
+.img-wrap-btn2 {
+    left: 50%;
+    bottom: 50%;
+}
+
+.img-wrap-btn3 {
+    left: 30%;
+    bottom: 10%;
+}
+
+
+.img-wrap-btn4 {
+    left: 55%;
+    bottom: 10%;
+}
+
+.img-wrap-btn5 {
+    left: 30%;
+    bottom: 50%;
+}
+
+.img-wrap-btn6 {
+    left: 10%;
+    bottom: 10%;
+}
+
+.img-wrap-btn7 {
+    left: 70%;
+    bottom: 10%;
+}

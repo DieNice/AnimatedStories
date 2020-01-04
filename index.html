@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Animated Stories</title>
+    <meta http-equiv="Cache-Control" content="no-cache"><!--запрет кеширования браузером и прокси-->
     <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/controlelements.css" rel="stylesheet" type="text/css">
     <link href="styles/myborder.css" rel="stylesheet" type="text/css">
     <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!--иконки соц сетей.-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="scripts/firstslide.js"></script>
 </head>
 <body>
@@ -17,53 +22,59 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
+        <ul class="navbar-nav ml-md-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Домашняя страница <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">О нас| Обратная связь</a>
+                <a class="nav-link" href="html/strorycreate.html">Создать историю</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Регистрация|Авторизация</a>
+                <a class="nav-link" href="#">О нас</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<div class="container w-75 align-content-center">
-    <div id="myslider" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner myborder">
+<div class="container col-3"></div>
+<div class="container col-6">
+    <div id="myslider" class="carousel slide myborder" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner " id="presentation">
             <div class="carousel-item active img-wrap ">
-                <img class="d-block w-100 img-fluid" src="images/limbo-1.jpg" alt="First slide">
-                <form class="form-inline">
-                    <input type="email" class="form-control" id="inputname" aria-describedby="emailHelp"
-                           placeholder="Введите имя">
-                </form>
+                <img src="images/slide1.gif">
                 <h5 id="playcaption">Вы готовы?</h5>
-                <button type="button" class="btn btn-success align-content-center" id="btn1">
-                    <a class="" href="#myslider" role="button" data-slide="next">Да</a></button>
-                <button type="button" class="btn btn-danger align-content-center" id="btn2" onclick="buttonno()">
+                <button onclick="nextslide('html/slide2.html','slide2')" type="button"
+                        class="btn btn-success align-content-center img-wrap-btn1 hasslider">
+                    <a href="#myslider" role="button"
+                       data-slide="next">Да</a></button>
+                <button type="button" class="btn btn-danger align-content-center img-wrap-btn2 hasslider"
+                        onclick="buttonno()">
                     <a>Нет</a></button>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="images/limbo-2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="images/limbo-3.jpg" alt="Third slide">
-            </div>
+            <div class="carousel-item" id="slide2"></div>
+            <div class="carousel-item" id="slide3"></div>
+            <div class="carousel-item" id="slide4"></div>
+            <div class="carousel-item" id="slide5"></div>
+            <div class="carousel-item" id="slide6"></div>
+            <div class="carousel-item" id="slide7"></div>
         </div>
-        <!--<a class="carousel-control-prev" href="#myslider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myslider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>-->
     </div>
 </div>
+<div class="container col-3"></div>
 
+<footer class="container-fluid">
+    <div class="container-fluid row text-center">
+        <div class="col-12">
+            <h2>Наши контакты</h2>
+        </div>
+        <div class="col-12 social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -72,6 +83,6 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="scripts/bootstrap.js"></script>
-
+<script src="scripts/ajax.js"></script>
 </body>
 </html>

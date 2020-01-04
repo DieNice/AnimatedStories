@@ -18,7 +18,3 @@ function buttonno() {
             break;
     }
 }
-
-function getName() {
-    return document.getElementById("inputname").value.toString();
-}
