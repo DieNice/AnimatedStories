@@ -19,20 +19,21 @@
 <div class="container-fluid">
     <h2 class="headertextarea">Введите текст своей истории</h2>
     <div class="form-group" >
-<!--        <label for="exampleFormControlTextarea1">Example textarea</label>-->
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
 </div>
 
 <form enctype="multipart/form-data" method="post">
     <div class="form-group container-fluid col-4 choosefile">
-        <label for="exampleFormControlFile1"><h3>Выберите изображение</h3></label>
-        <input type="file"  accept="image/jpeg" class="form-control-file" id="exampleFormControlFile1" >
+        <label for="uploadfile"><h3>Выберите изображение</h3></label>
+        <input type="file"  accept="image/jpeg" class="form-control-file" id="uploadfile" >
         <div class="container-fluid align-content-center">
-            <button type="submit" class="btn btn-primary container-fluid">Создать</button>
+            <button type="submit" class="btn container-fluid" id="crt">Создать</button>
         </div>
     </div>
 </form>
+
+<div id="imghere" class="container col-4"></div>
 
 <footer class="container-fluid">
     <div class="container-fluid row text-center">
