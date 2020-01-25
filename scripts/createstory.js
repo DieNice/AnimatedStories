@@ -1,4 +1,5 @@
 const wasm = import("wasm-image-to-black-white");
+const snabbt = require('snabbt.js');
 import "../styles/createstrory.css"
 import "../styles/bootstrap.css"
 import "./bootstrap"
@@ -17,8 +18,27 @@ fileUploader.addEventListener('change', (event) => {
         });
         img.classList.add('img-fluid');
         document.getElementById('imghere').appendChild(img);
+        let txt=document.getElementById('txtarea').value;
+        document.getElementById('texthere').innerText=txt;
     }
 
     img.src = URL.createObjectURL(file);
 
 })
+
+let timerId = setTimeout(function tick() {
+    snabbt(document.getElementById('texthere'), {
+        position: [100, 0, 0],
+        easing: 'ease'
+    }).snabbt({
+        fromRotation: [0, 0, -2*Math.PI],
+        position: [0, 0, 0],
+        easing: 'spring',
+        springConstant: 0.2,
+        springDeceleration: 0.90,
+        springMass: 10,
+    });
+    timerId = setTimeout(tick, 5000); // (*)
+}, 5000);
+
+timerId;
