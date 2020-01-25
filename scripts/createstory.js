@@ -15,6 +15,7 @@ fileUploader.addEventListener('change', (event) => {
            img.src=bnw.grayscale_with_luminocity(img);
 
         });
+        img.classList.add('img-fluid');
         document.getElementById('imghere').appendChild(img);
     }
 
