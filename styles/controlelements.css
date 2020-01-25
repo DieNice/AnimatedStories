@@ -14,14 +14,6 @@ button a {
     font-size: x-large;
 }
 
-.img-wrap #inputname {
-    position: absolute;
-    align-content: center;
-    left: 40%;
-    bottom: 70%;
-    width: 20%;
-}
-
 .img-wrap {
     position: relative;
 }

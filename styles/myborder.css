@@ -1,7 +1,0 @@
-.myborder {
-    margin: 2% auto;
-
-    border: 1pc solid red;
-    border-image: url(../images/borderforslides.jpg) 50;
-    border-image-repeat: repeat;
-}

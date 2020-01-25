@@ -39,3 +39,12 @@ textarea{
 .choosefile{
     background-color: #1e7e34;
 }
+
+p{
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    position: absolute;
+    align-content: center;
+    color: white;
+}
