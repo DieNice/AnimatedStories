@@ -18,3 +18,6 @@ function buttonno() {
             break;
     }
 }
+
+window.i=i;
+window.buttonno=buttonno;

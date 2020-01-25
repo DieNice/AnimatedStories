@@ -11,3 +11,4 @@ async function nextslide(url, id) {
         alert("Ошибка http:" + response.status);
     }
 }
+window.nextslide=nextslide;
