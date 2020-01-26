@@ -21,20 +21,16 @@
 <form enctype="multipart/form-data" method="post">
     <div class="form-group container-fluid col-4 choosefile">
         <label for="uploadfile"><h3>Выберите изображение</h3></label>
-        <input type="file"  accept="image/jpeg" class="form-control-file" id="uploadfile" >
+        <input type="file"  accept="image/jpeg" class="form-control-file" id="uploadfile" onchange="dostory()">
     </div>
 </form>
 <div class="container-fluid align-content-center">
     <button type="submit" class="btn btn-success container-fluid" id="crt">Создать</button>
 </div>
 
-<div class="container">
-    <div class="containner col-3"></div>
-    <div id="imghere" сlass="col-4">
+    <div id="imghere">
         <p id="texthere"></p>
     </div>
-    <div class="container col-3"></div>
-</div>
 
 <footer class="container-fluid">
     <div class="container-fluid row text-center">

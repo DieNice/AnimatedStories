@@ -52,40 +52,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "index.html",
         }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide2.html",
-            filename: "./html/slide2.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide3.html",
-            filename: "./html/slide3.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide4.html",
-            filename: "./html/slide4.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide5-1.html",
-            filename: "./html/slide5-1.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide5-2.html",
-            filename: "./html/slide5-2.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide6-1.html",
-            filename: "./html/slide6-1.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide6-2.html",
-            filename: "./html/slide6-2.html"
-        }),
-        new HtmlWebpackPlugin({
-            template: "./html/slide7.html",
-            filename: "./html/slide7.html"
-        }),
-
-
         new MiniCssExtractPlugin({
             filename: "[name].css",
         }),
@@ -98,6 +64,38 @@ module.exports = {
             {
                 from: './images',
                 to: './images'
+            },
+            {
+                from: './html/slide2.html',
+                to: './html/slide2.html'
+            },
+            {
+                from: './html/slide3.html',
+                to: './html/slide3.html'
+            },
+            {
+                from: './html/slide4.html',
+                to: './html/slide4.html'
+            },
+            {
+                from: './html/slide5-1.html',
+                to: './html/slide5-1.html'
+            },
+            {
+                from: './html/slide5-2.html',
+                to: './html/slide5-2.html'
+            },
+            {
+                from: './html/slide6-1.html',
+                to: './html/slide6-1.html'
+            },
+            {
+                from: './html/slide6-2.html',
+                to: './html/slide6-2.html'
+            },
+            {
+                from: './html/slide7.html',
+                to: './html/slide7.html'
             },
         ])
     ]

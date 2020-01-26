@@ -6,25 +6,26 @@ import "./bootstrap"
 
 const fileUploader = document.querySelector("#uploadfile");
 
-fileUploader.addEventListener('change', (event) => {
-    const file = event.target.files[0];
+function dostory(){
+        const file = event.target.files[0];
 
-    let img = new Image;
+        let img = new Image;
 
-    document.getElementById('crt').onclick = function() {
-        wasm.then(bnw => {
-           img.src=bnw.grayscale_with_luminocity(img);
+        document.getElementById('crt').onclick = function() {
+            wasm.then(bnw => {
+                img.src=bnw.grayscale_with_luminocity(img);
 
-        });
-        img.classList.add('img-fluid');
-        document.getElementById('imghere').appendChild(img);
-        let txt=document.getElementById('txtarea').value;
-        document.getElementById('texthere').innerText=txt;
-    }
+            });
+            img.classList.add('img-fluid');
+            document.getElementById('imghere').appendChild(img);
+            let txt=document.getElementById('txtarea').value;
+            document.getElementById('texthere').innerText=txt;
+        }
 
-    img.src = URL.createObjectURL(file);
+        img.src = URL.createObjectURL(file);
+}
 
-})
+window.dostory=dostory;
 
 let timerId = setTimeout(function tick() {
     snabbt(document.getElementById('texthere'), {
