@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Stories</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!--иконки соц сетей.-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="d-inline-block align-top mylogo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createstory.html">Создать историю</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="containner col-3"></div>
+<div class="container col-6">
+    <div id="myslider" class="carousel slide myborder" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner " id="presentation">
+            <div class="carousel-item active img-wrap ">
+                <img src="images/slide1.gif">
+                <h5 id="playcaption">Вы готовы?</h5>
+                <button onclick="nextslide('html/slide2.html','slide2')" type="button"
+                        class="btn btn-success align-content-center img-wrap-btn1 hasslider">
+                    <a href="#myslider" role="button"
+                       data-slide="next">Да</a></button>
+                <button type="button" class="btn btn-danger align-content-center img-wrap-btn2 hasslider"
+                        onclick="buttonno()">
+                    <a>Нет</a></button>
+            </div>
+            <div class="carousel-item" id="slide2"></div>
+            <div class="carousel-item" id="slide3"></div>
+            <div class="carousel-item" id="slide4"></div>
+            <div class="carousel-item" id="slide5"></div>
+            <div class="carousel-item" id="slide6"></div>
+            <div class="carousel-item" id="slide7"></div>
+        </div>
+    </div>
+</div>
+<div class="container col-3"></div>
+
+<footer class="container-fluid">
+    <div class="container-fluid row text-center">
+        <div class="col-12">
+            <h2>Наши контакты</h2>
+        </div>
+        <div class="col-12 social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

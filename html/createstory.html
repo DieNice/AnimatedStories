@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Story</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container headertext">
+    <h1>Создайте свою историю</h1>
+</div>
+
+
+<div class="container-fluid">
+    <h2 class="headertextarea" >Введите текст своей истории</h2>
+    <div class="form-group" >
+        <textarea class="form-control" id="txtarea" rows="3"></textarea>
+    </div>
+</div>
+
+<form enctype="multipart/form-data" method="post">
+    <div class="form-group container-fluid col-4 choosefile">
+        <label for="uploadfile"><h3>Выберите изображение</h3></label>
+        <input type="file"  accept="image/jpeg" class="form-control-file" id="uploadfile" onchange="dostory()">
+    </div>
+</form>
+<div class="container-fluid align-content-center">
+    <button type="submit" class="btn btn-success container-fluid" id="crt">Создать</button>
+</div>
+
+    <div id="imghere">
+        <p id="texthere"></p>
+    </div>
+
+<footer class="container-fluid">
+    <div class="container-fluid row text-center">
+        <div class="col-3 social ">
+            <button type="submit"  class="btn btn-primary container-fluid"><a href="index.html">Назад</a></button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

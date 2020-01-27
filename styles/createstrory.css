@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: "Segoe U", Arial, sans-serif;
+    font-size: 1em;
+    background-image: url("../images/background.jpeg");
+}
+
+textarea{
+    width: 80%;
+    height: 300px!important;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+}
+
+.headertext{
+    text-align: center !important;
+    background-color: #5a6268;
+
+}
+
+.headertextarea{
+    text-align: center !important;
+    background-color: #1e7e34;
+}
+
+.choosefile{
+    background-color: #1e7e34;
+}
+
+p{
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    position: absolute;
+    align-content: center;
+    color: white;
+}
